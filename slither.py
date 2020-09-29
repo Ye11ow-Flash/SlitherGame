@@ -186,9 +186,6 @@ def gameLoop():
                     lead_x_change =0
                 elif event.key == pygame.K_p:
                      pause()
-            #if event.type == pygame.KEYUP:
-               # if event.key == pygame.K_LEFT or event.key == pygame.K_RIGHT:
-                #    lead_x_change = 0
 
    
         if lead_x >= display_width or lead_x < 0 or lead_y >= display_height or lead_y < 0:
@@ -199,8 +196,6 @@ def gameLoop():
 
         gameDisplay.fill(white)  #clearing , faster
 
-        
-        #pygame.draw.rect(gameDisplay, red, [randAppleX, randAppleY, AppleThickness, AppleThickness])
 
         gameDisplay.blit(appleimage, (randAppleX, randAppleY))
 
